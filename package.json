@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server -p --public 172.20.81.150:9000 --host 0.0.0.0 --port 9000 --open"
   },
   "dependencies": {
     "history": "^4.10.1",
@@ -25,10 +25,11 @@
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "@babel/compat-data": "^7.9.0",
     "html-webpack-plugin": "^3.2.0",
     "path": "^0.12.7",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.11.0"
   }
 }
